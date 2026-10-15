@@ -45,7 +45,7 @@ The `heroes`/`heroes` credentials are local defaults for the demo only; set your
 
 ## Versions (as benchmarked, Oct 15, 2026)
 
-- crocket commit `63317f2` (PR #40, "workers follow the database pool"), cloned by the Dockerfile
+- crocket commit `63317f2` (workers follow the database pool by default), cloned by the Dockerfile
 - GCC 16.2 via `ghcr.io/sean3z/crocket-toolchain:gcc-16.2`, `-std=c++26`, RelWithDebInfo with frame pointers
 - libpqxx / libpq from the toolchain image; runtime on `debian:trixie-slim`
 - PostgreSQL 16

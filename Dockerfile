@@ -1,5 +1,5 @@
 # crocket Heroes, built from source with GCC 16.2 (C++26 reflection).
-# crocket is pinned to commit 63317f2 (PR #40 merged), the code benchmarked in run 2.
+# crocket is pinned to commit 63317f2 (workers follow the pool by default), as benchmarked.
 FROM ghcr.io/sean3z/crocket-toolchain:gcc-16.2 AS build
 ARG CROCKET_REF=63317f2
 RUN git clone https://github.com/sean3z/crocket /crocket && git -C /crocket checkout ${CROCKET_REF}
