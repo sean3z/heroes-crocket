@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.28)
+project(heroes_crocket CXX)
+set(CROCKET_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(CROCKET_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(CROCKET_PG ON CACHE STRING "" FORCE)
+add_subdirectory(${CROCKET_SRC} crocket)
+add_executable(heroes main.cpp)
+target_link_libraries(heroes PRIVATE crocket::crocket crocket::pg)
